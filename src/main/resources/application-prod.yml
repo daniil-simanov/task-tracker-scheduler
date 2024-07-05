@@ -12,6 +12,7 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
     producer:
       properties:
         spring.json.type.mapping: emailDTO:com.dansim.tasktrackerscheduler.dto.EmailDTO
